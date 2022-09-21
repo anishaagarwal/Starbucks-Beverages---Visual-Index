@@ -18,24 +18,27 @@ body {
 }
 
 /* images and videos max out at full width */
-img,
-video {
-  height: auto;
-  max-width: 100%;
-}
 
-
-
-
-/* .container {
-  background-color: #eee
+img {
+  position: relative;
+  top: 16px;
+  left: 16px;
+  width: 300px;
 }
 
 .right-text {
   position: absolute;
+  top: 6px;
+  right: 16px;
+  font-size: 18px;
+  border: 1px solid green;
   display: inline;
-    top: 80px;
-  right: 20px;
   width: 200px;
-  height: 100px;
-} */
+}
+
+.container {
+  background-color: #eeeeee;
+  position: relative;
+  border: 1px solid black;
+  height: 500px;
+}
