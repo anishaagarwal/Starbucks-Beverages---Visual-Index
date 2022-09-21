@@ -19,20 +19,21 @@ body {
 
 /* images and videos max out at full width */
 
-img {
-  position: relative;
-  top: 16px;
-  left: 16px;
+/* img {
   width: 300px;
+  position: absolute;
+  left: 100px;
+  top: 50px
+  
 }
 
 .right-text {
   position: absolute;
-  top: 6px;
-  right: 16px;
-  font-size: 18px;
+  left: 150px;
+  top: 120px;
   border: 1px solid green;
   display: inline;
+  text-align: center;
   width: 200px;
 }
 
@@ -40,5 +41,34 @@ img {
   background-color: #eeeeee;
   position: relative;
   border: 1px solid black;
-  height: 500px;
+  height: 400px;
+  width: 600px;
+} */
+
+
+/* OPTION 2 */
+/* img {
+  width: 300px;
+  position: absolute;
+  top: 80px;
+  left: 140px
+  
 }
+
+.right-text {
+  position: relative;
+  border: 1px solid green;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 200px;
+}
+
+.container {
+  background-color: #eeeeee;
+  position: relative;
+  border: 1px solid black;
+  height: 400px;
+  width: 600px;
+}
+ */
