@@ -11,3 +11,10 @@ const anotherValue = 10;
 document.getElementById("answer").innerHTML = value * anotherValue;
 
 console.log(typeof value)
+
+function addValue() {
+  const prevValue = document.getElementById("answer").innerHTML;
+  console.log(typeof prevValue)
+  
+  document.getElementById("answer").innerHTML = Number(prevValue)+1;
+}
