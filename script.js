@@ -1,17 +1,18 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
-
 console.log("Hello, world!");
 
-console.log('my page')
-
 const value = 5;
-const anotherValue = 10;
-
-const fruits = ['apple', 'orange', 'banana']
-
-for (let i = 0; i < fruits.length; i++) {
-    document.getElementById("answer").innerHTML += fruits[i]; 
-}
+const word = "this is a string!"
 
 console.log(typeof value)
+/////////////////////////////////////////
+// SOME LINES TO USE FOR THE CHALLENGE//
+////////////////////////////////////////
+
+// this line of code will create a new HTML p element
+let element = document.createElement("p");
+
+// this line of code will assign text inside of the element created above
+element.innerHTML = "some text";
+
+// this code will grab the element with id "answer" and add something to it
+document.getElementById("answer").appendChild(element)
