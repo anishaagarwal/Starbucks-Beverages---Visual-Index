@@ -8,13 +8,10 @@ console.log('my page')
 const value = 5;
 const anotherValue = 10;
 
-document.getElementById("answer").innerHTML = value * anotherValue;
+const fruits = ['apple', 'orange', 'banana']
+
+for (let i = 0; i < fruits.length; i++) {
+    document.getElementById("answer").innerHTML += fruits[i]; 
+}
 
 console.log(typeof value)
-
-function addValue() {
-  const prevValue = document.getElementById("answer").innerHTML;
-  console.log(typeof prevValue)
-  
-  document.getElementById("answer").innerHTML = Number(prevValue)+1;
-}
