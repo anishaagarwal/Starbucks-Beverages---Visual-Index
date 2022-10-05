@@ -8,7 +8,7 @@ const fruits = ["apple", "mango", "strawberry", "melon", "banana"]
 
 console.log(fruits)
 
-for (let i = 0; i < ; i++) {
+for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i])
   // this line of code will create a new HTML p element
   let el = document.createElement("p");
