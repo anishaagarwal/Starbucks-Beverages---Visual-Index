@@ -1,9 +1,12 @@
 console.log("Hello, world!");
 
 const value = 5;
-const word = "this is a string!"
+const newValue = 20;
+const val = "this is a string!"
 
-console.log(typeof value)
+const jobs = ["teacher", "nurse", "driver", "Uber", "Lyft"]
+
+console.log(jobs)
 /////////////////////////////////////////
 // SOME LINES TO USE FOR THE CHALLENGE//
 ////////////////////////////////////////
