@@ -1,6 +1,7 @@
 
 let x = 50;
 let speed = 5
+
 // happens only once!
 function setup() {
   createCanvas(500, 400);
@@ -12,5 +13,4 @@ function setup() {
 function draw() {
   fill(255,0,0)
   ellipse(x,50,30)
-   
 }
