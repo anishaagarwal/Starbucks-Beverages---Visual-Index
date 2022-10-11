@@ -1,15 +1,20 @@
-const primary = 'rgb(150,0,50)'
-const y = 800;
 
+let x = 50;
 // happens only once!
 function setup() {
-  createCanvas(500, y);
+  createCanvas(500, 400);
   background(205);
   stroke(30)
 }
 
-// happens forever! unless you noLoop() it.
+// happens forever! unless call noLoop() function inside
 function draw() {
-  fill(primary)
-  ellipse(50,50,30)
+  fill(255,0,0)
+  ellipse(x,50,30)
+  if (x < width) {
+    x++  
+  } else {
+    x = x-100
+  }
+  
 }
