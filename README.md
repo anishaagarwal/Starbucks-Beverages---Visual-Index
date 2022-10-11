@@ -12,7 +12,7 @@ This is a starter template to create new sketches with p5.js.
 
 ← `script.js`: If you're feeling fancy you can add interactivity to your site with JavaScript.
 
-← `.eslintrc.json`: This one is weird! 
+← `.eslintrc.json`: This one is weird! Best to leave it alone. All it's doing is setting some rules to prevent a bunch of unnecessary red dots appearing in your Javascript file.
 
 ![Glitch](https://cdn.glitch.com/a9975ea6-8949-4bab-addb-8a95021dc2da%2FLogo_Color.svg?v=1602781328576)
 
