@@ -13,7 +13,9 @@ function setup() {
 function draw() {
   let x = 159;
   let y = 80;
-  let m = map(max(numArray), 0, 10, 0, 10);
+  let m = map(5, min(numArray), max(numArray), 0, 20);
+  
+  let m2 = map(numArray[3], min(numArray), max(numArray), 0, 20);
 
   // Draw the Maximum value in the array.
   textSize(32);
@@ -21,4 +23,6 @@ function draw() {
   
   fill(30,20,100)
   ellipse(x, 200, m*10)
+  ellipse(x+100, 200, m2*10)
+  
 }
