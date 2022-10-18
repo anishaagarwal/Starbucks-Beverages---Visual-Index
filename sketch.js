@@ -28,11 +28,13 @@ function draw() {
     console.log(table.getNum(row,5))
     
     let x = map(table.getNum(row,5),1970,2019,0,width)
-    let y = map(table.getNum(row,13), 50,90,100,height)
-    if (table.getString(6) == "physics") {
-      
+    let y = map(table.getNum(row,13), 50,90,height,100)
+    if (table.getString(row,6) == "physics") {
+      fill(130)
+    } else {
+      fill(230)
     }
-       fill(130)
+       
       ellipse(x, y, 5) 
   }
   
