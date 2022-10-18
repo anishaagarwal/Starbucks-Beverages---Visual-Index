@@ -6,7 +6,6 @@ function setup() {
   background(255, 255, 255);
   stroke(30, 30, 220)
   strokeWeight(0)
-  
 }
 
 // happens forever! unless call noLoop() function inside
