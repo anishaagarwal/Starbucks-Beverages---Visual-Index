@@ -11,8 +11,9 @@ function preload() {
 
 // happens only once!
 function setup() {
-  createCanvas(500, 500);
+  createCanvas(1000, 1000);
   background(255, 255, 255);
+  console.log(table)
 }
 
 // happens forever! unless call noLoop() function inside
