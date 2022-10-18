@@ -11,30 +11,31 @@ function preload() {
 
 // happens only once!
 function setup() {
-  createCanvas(1000, 1000);
+  createCanvas(800, 800);
   background(255, 255, 255);
+  
+  // console out the table and look for the columns we are interested in
   console.log(table)
 }
 
 // happens forever! unless call noLoop() function inside
 function draw() {
-  
   stroke(10)
   strokeWeight(1)
   
   console.log('Num cols: '+table.getColumnCount())
   console.log('Num rows: '+ table.getRowCount())
-  
+
+  // loop through the table for every row in the CSV
   for (let row = 0; row < table.getRowCount(); row++) {
-    console.log(table.getNum(row,5))
+    // for this row, store the value for the cell in column 6
+    let value = table.getNum(row,5)
     
-    let x = map(table.getNum(row,5),1970,2019,0,width)
-    let y = map(table.getNum(row,13), 50,90,height,100)
-    if (table.getString(row,6) == "physics") {
-      fill(130)
-    } else {
-      fill(230)
-    }
+    // map this value onto a range of pixels using the min/max of the dataset
+    let x = map(value,1970,2019,0,width)
+    
+    
+    let y = height/2;
        
       ellipse(x, y, 5) 
   }
