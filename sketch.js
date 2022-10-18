@@ -1,6 +1,12 @@
-// add more key/value pairs to your object from the questions
-const answers = {
-  'fromMass': "no",
+
+let table;
+
+// preload happens only once, and is required to happen before setup
+// if we load data here, it ensures we don't draw until data is ready!
+function preload() {
+  //my table is comma separated value "csv"
+  //and has a header specifying the columns labels
+  table = loadTable('./data/nobel_prizes.csv', 'csv', 'header');
 }
 
 // happens only once!
@@ -15,11 +21,8 @@ function draw() {
   stroke(10)
   strokeWeight(3)
   
-  if (answers.fromMass == "no") {
-    fill(30,220,200)  
-  } else {
-    fill(200)
-  }
+  console.log('Num cols: '+table.getColumnCount())
+  console.log('Num rows: '+ table.getRowCount())
   
   ellipse(100, 200, 40)
   
