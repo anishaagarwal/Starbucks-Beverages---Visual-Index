@@ -22,6 +22,7 @@ function setup() {
 function draw() {
   stroke(10)
   strokeWeight(1)
+  console.log(table)
   
   console.log('Num cols: '+table.getColumnCount())
   console.log('Num rows: '+ table.getRowCount())
