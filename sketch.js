@@ -23,18 +23,16 @@ function setup() {
 function draw() {
   stroke(10);
   strokeWeight(1);
-  rectMode(CENTER);
-  rect(300, 300, 300, 400);
-  quad(150, 150, 150, 450, 400,200,, 30, 76);
+  rect(50, 50, 200, 300);
   allValues();
 }
 
 function allValues() {
   let a = answers.Calories;
-  let mappeda = map(a, 0, 300, 500, 100);
+  let mappeda = map(a, 0, 300, 450, 250);
   stroke("#C58930");
   strokeWeight(10);
-  line(200, 500, 200, mappeda);
+  line(350, 100, 350, mappeda);
   let b = answers.Caffeine;
   let mappedb = map(a, 0, 300, 500, 100);
   stroke("#C58930");
