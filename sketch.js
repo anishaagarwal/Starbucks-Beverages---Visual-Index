@@ -29,15 +29,15 @@ function draw() {
 
 function allValues() {
   let a = answers.Calories;
-  let mappeda = map(a, 0, 300, 450, 250);
+  let mappeda = map(a, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
-  line(350, 100, 350, mappeda);
+  line(100, 350, 100,mappeda);
   let b = answers.Caffeine;
-  let mappedb = map(a, 0, 300, 500, 100);
+  let mappedb = map(b, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
-  line(300, 500, 300, mappedb);
+  line(130, 350, 130, mappedb);
 }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
