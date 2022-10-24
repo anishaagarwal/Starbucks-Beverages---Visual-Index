@@ -1,15 +1,12 @@
-// initialize the table as an empty variable
+
 let table;
 
-// preload happens only once, and is required to happen before setup
-// if we load data here, it ensures we don't draw until data is ready!
 function preload() {
-  // my table is comma separated value "csv"
-  // and has a header specifying the columns labels
-  table = loadTable('./nobel_prizes_50yrs.csv', 'csv', 'header');
+  
+  table = loadTable('./nobel_Starbucks_coffee', 'csv', 'header');
 }
 
-// happens only once, after preload() triggers
+
 function setup() {
   createCanvas(600, 600);
   background(255, 255, 255);
