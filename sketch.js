@@ -38,6 +38,9 @@ function allValues() {
   stroke("#C58930");
   strokeWeight(10);
   line(130, 350, 130, mappedb);
+  // let c = answers.Carbs;
+  //  let mappedc = map(c, 0, 300, 350, 50);
+  // circle (300,300,c)
 }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
