@@ -1,16 +1,14 @@
 let table;
 
 function preload() {
-  table = loadTable("./Starbucks_coffee", "csv", "header");
+  table = loadTable("./Starbucks_coffee.csv", "csv", "header");
 }
 
 function setup() {
   createCanvas(600, 600);
   background(255, 255, 255);
-
-  // console out the table and look for the columns we are interested in
-  // using the developer tools of the browser (Command+Option+i on a Mac or "Inspect" on right click)
-  console.log(table);
+  print(table.getRowCount() + "total rows ");
+  print(table.getColumnCount() + "total columns");
 }
 
 // all drawing happens here, but only once because of the noLoop() at the end
