@@ -3,7 +3,7 @@ let numRows;
 let numCols;
 let answers = {
   Calories: "100",
-  Caffeine: "",
+  Caffeine: "75",
   Carbs: "",
   Sugar: "",
 };
@@ -13,7 +13,7 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(200, 300);
+  createCanvas(600, 600);
   background(255, 255, 255);
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
@@ -21,15 +21,26 @@ function setup() {
 
 // all drawing happens here, but only once because of the noLoop() at the end
 function draw() {
-
- let a = answers.Calories;
-  let mappeda = map(a, 0, 280, 300, 0);
-  stroke("#C58930");
-  strokeWeight(5);
-  line(20, 0, 20, mappeda);
+  stroke(10);
+  strokeWeight(1);
+  rectMode(CENTER);
+  rect(300, 300, 300, 400);
+  quad(150, 150, 150, 450, 400,200,, 30, 76);
+  allValues();
 }
 
-
+function allValues() {
+  let a = answers.Calories;
+  let mappeda = map(a, 0, 300, 500, 100);
+  stroke("#C58930");
+  strokeWeight(10);
+  line(200, 500, 200, mappeda);
+  let b = answers.Caffeine;
+  let mappedb = map(a, 0, 300, 500, 100);
+  stroke("#C58930");
+  strokeWeight(10);
+  line(300, 500, 300, mappedb);
+}
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
 //     // getNum() method takes two arguments: first is the row index, and second is the column index
