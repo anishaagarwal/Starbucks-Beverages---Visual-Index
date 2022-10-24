@@ -3,7 +3,7 @@ let table;
 
 function preload() {
   
-  table = loadTable('./nobel_Starbucks_coffee', 'csv', 'header');
+  table = loadTable('./Starbucks_coffee', 'csv', 'header');
 }
 
 
