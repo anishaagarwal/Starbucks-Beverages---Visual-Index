@@ -1,8 +1,6 @@
 let table;
 let numRows;
 let numCols;
-let x=50;
-let y=50;
 let answers = {
   Calories: "100",
   Caffeine: "75",
@@ -26,7 +24,6 @@ function setup() {
   // }
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 6; c++) {
-      
       
       //console.log(r, c);
     }
