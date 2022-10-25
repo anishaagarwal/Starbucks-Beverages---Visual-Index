@@ -4,7 +4,7 @@ let numCols;
 let answers = {
   Calories: "100",
   Caffeine: "75",
-  Carbs: "10",
+  Carbs: "180",
   Sugar: "50",
 };
 
@@ -50,13 +50,13 @@ function allValues() {
   strokeWeight(10);
   line(130, 350, 130, mappedb);
   let c = answers.Carbs;
-  let mappedc = map(c, 0, 180, 0, 30);
+  let mappedc = map(c, 0, 180, 0, 80);
   fill("#C58930");
-  circle(200, 300, c);
+  circle(200, 300, mappedc);
   let d = answers.Sugar;
-  let mappedd = map(d, 0, 50, 30, 40);
+  let mappedd = map(d, 0, 180, 0, 80);
   fill("#C58930");
-  circle(200, 200, d);
+  circle(200, 200, mappedd);
 }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
