@@ -17,8 +17,13 @@ function setup() {
   background(255, 255, 255);
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
-  for (let i=0; i<numRows; i++){
-    console.log(table.rows[i]);
+  // for (let i=0; i<numRows; i++){
+  // console.log(table.rows[i].obj);
+  // }
+  for (let r=0; r<6; r++){
+    for (let c=0; c<4; c++){
+      console.log(r,c);
+    }
   }
 }
 
