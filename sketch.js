@@ -13,21 +13,22 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth,600);
   background(255, 255, 255);
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
+  //Check for no. of rows and columns
+  console.log(numRows, numCols);
   // for (let i=0; i<numRows; i++){
   // console.log(table.rows[i].obj);
   // }
-  for (let r=0; r<6; r++){
-    for (let c=0; c<4; c++){
-      console.log(r,c);
+  for (let r = 0; r < 4; r++) {
+    for (let c = 0; c < 6; c++) {
+      console.log(r, c);
     }
   }
 }
 
-// all drawing happens here, but only once because of the noLoop() at the end
 function draw() {
   stroke(10);
   strokeWeight(1);
@@ -36,25 +37,26 @@ function draw() {
   allValues();
 }
 
+// creating a function for all values to be plotted
 function allValues() {
   let a = answers.Calories;
   let mappeda = map(a, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
-  line(100, 350, 100,mappeda);
+  line(100, 350, 100, mappeda);
   let b = answers.Caffeine;
   let mappedb = map(b, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
   line(130, 350, 130, mappedb);
- let c = answers.Carbs;
-let mappedc = map(c, 0, 180, 0, 30);
+  let c = answers.Carbs;
+  let mappedc = map(c, 0, 180, 0, 30);
   fill("#C58930");
-circle (200,300,c)
-   let d = answers.Sugar;
-let mappedd = map(d, 0, 50, 30, 40);
+  circle(200, 300, c);
+  let d = answers.Sugar;
+  let mappedd = map(d, 0, 50, 30, 40);
   fill("#C58930");
-circle (200,200,d)
+  circle(200, 200, d);
 }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
