@@ -26,7 +26,7 @@ function setup() {
   // }
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 6; c++) {
-     
+      
       
       //console.log(r, c);
     }
