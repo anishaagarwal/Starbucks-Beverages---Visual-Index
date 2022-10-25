@@ -4,8 +4,8 @@ let numCols;
 let answers = {
   Calories: "100",
   Caffeine: "75",
-  Carbs: "110",
-  Sugar: "40",
+  Carbs: "10",
+  Sugar: "50",
 };
 
 function preload() {
@@ -40,11 +40,11 @@ function allValues() {
   strokeWeight(10);
   line(130, 350, 130, mappedb);
  let c = answers.Carbs;
-let mappedc = map(c, 0, 180, 50, 50);
+let mappedc = map(c, 0, 180, 0, 30);
   fill("#C58930");
 circle (200,300,c)
    let d = answers.Sugar;
-let mappedd = map(d, 0, 50, 0, 180);
+let mappedd = map(d, 0, 50, 30, 40);
   fill("#C58930");
 circle (200,200,d)
 }
