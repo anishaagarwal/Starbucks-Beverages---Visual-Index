@@ -17,6 +17,9 @@ function setup() {
   background(255, 255, 255);
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
+  for (let i=0; i<numRows; i++){
+    console.log(table.rows[i]);
+  }
 }
 
 // all drawing happens here, but only once because of the noLoop() at the end
