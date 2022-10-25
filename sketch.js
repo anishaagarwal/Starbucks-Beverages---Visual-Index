@@ -4,8 +4,8 @@ let numCols;
 let answers = {
   Calories: "100",
   Caffeine: "75",
-  Carbs: "",
-  Sugar: "",
+  Carbs: "110",
+  Sugar: "40",
 };
 
 function preload() {
@@ -23,6 +23,7 @@ function setup() {
 function draw() {
   stroke(10);
   strokeWeight(1);
+  noFill();
   rect(50, 50, 200, 300);
   allValues();
 }
@@ -38,9 +39,14 @@ function allValues() {
   stroke("#C58930");
   strokeWeight(10);
   line(130, 350, 130, mappedb);
-  // let c = answers.Carbs;
-  //  let mappedc = map(c, 0, 300, 350, 50);
-  // circle (300,300,c)
+ let c = answers.Carbs;
+let mappedc = map(c, 0, 180, 50, 50);
+  fill("#C58930");
+circle (200,300,c)
+   let d = answers.Sugar;
+let mappedd = map(d, 0, 50, 0, 180);
+  fill("#C58930");
+circle (200,200,d)
 }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
