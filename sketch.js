@@ -1,6 +1,8 @@
 let table;
 let numRows;
 let numCols;
+let x=50;
+let y=50;
 let answers = {
   Calories: "100",
   Caffeine: "75",
@@ -24,6 +26,8 @@ function setup() {
   // }
   for (let r = 0; r < 4; r++) {
     for (let c = 0; c < 6; c++) {
+     
+      
       //console.log(r, c);
     }
   }
@@ -43,16 +47,16 @@ function allValues() {
   let mappeda = map(a, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
-  line(100, 350, 100, mappeda);
+  line(80, 350, 80, mappeda);
   let b = answers.Caffeine;
   let mappedb = map(b, 0, 300, 350, 50);
   stroke("#C58930");
   strokeWeight(10);
-  line(130, 350, 130, mappedb);
+  line(110, 350, 110, mappedb);
   let c = answers.Carbs;
   let mappedc = map(c, 0, 180, 0, 80);
   fill("#C58930");
-  circle(200, 300, mappedc);
+  circle(180, 300, mappedc);
   let d = answers.Sugar;
   let mappedd = map(d, 0, 180, 0, 80);
   fill("#C58930");
