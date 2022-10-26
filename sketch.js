@@ -13,18 +13,20 @@ function setup() {
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
   //console.log(table);
-
+  
+//CREATING A COUNTER TO
   let counter = 0;
+  //CREATING A GRID OF 6 COLUMNS AND 4 ROWS
   for (let c = 0; c < 6; c++) {
-    console.log("outer loop");
+    //console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
       stroke('#c6b5a8');
       noFill();
       rect(c * 200, r * 300, 200, 300);
-       console.log("inner loop");
+       //console.log("inner loop");
       counter++;
-      console.log(counter);
+      //console.log(counter);
       beverage (0,0,0);
       beverage (1,0,1);
       beverage (2,0,2);
@@ -81,9 +83,10 @@ function beverage(c, r, counter) {
   circle(x+120, y+250, mapCarbs);
   let drink=table.getString(counter,0);
   textSize(12);
+  textAlign(RIGHT);
   fill("#0a3b4a");
   textWrap(WORD);
-  text(drink,x+60,y+40,180);
+  text(drink,x+70,y+40,100);
 }
 
 

@@ -1,25 +1,25 @@
 Beverage,Beverage_prep,Calories,Caffeine (mg), Total Carbohydrates (g) , Sugars (g)
 Brewed Coffee,Tall,4,260,10,0
 Caffè Latte,Tall Nonfat Milk,100,75,120,14
-Caffè Mocha (Without Whipped Cream),Tall Nonfat Milk,170,95,100,27
-Vanilla Latte (Or Other Flavoured Latte),Tall Nonfat Milk,150,75,110,27
+Caffè Mocha,Tall Nonfat Milk,170,95,100,27
+Vanilla Latte,Tall Nonfat Milk,150,75,110,27
 Caffè Americano,Tall,10,150,10,0
 Cappuccino,Tall Nonfat Milk,60,75,70,8
-Skinny Latte (Any Flavour),Tall Nonfat Milk,100,75,125,13
+Skinny Latte,Tall Nonfat Milk,100,75,125,13
 Caramel Macchiato,Tall Nonfat Milk,140,75,105,24
-White Chocolate Mocha (Without Whipped Cream),Tall Nonfat Milk,270,75,190,45
-Hot Chocolate (Without Whipped Cream),Tall Nonfat Milk,190,20,110,32
-Caramel Apple Spice (Without Whipped Cream),Tall,210,0,15,49
+White Chocolate Mocha,Tall Nonfat Milk,270,75,190,45
+Hot Chocolate,Tall Nonfat Milk,190,20,110,32
+Caramel Apple Spice,Tall,210,0,15,49
 Tazo® Tea,Tall,0,50,0,0
 Tazo® Chai Tea Latte,Tall Nonfat Milk,160,70,80,32
 Tazo® Green Tea Latte,Tall Nonfat Milk,210,55,125,41
 Tazo® Full-Leaf Tea Latte,Tall Nonfat Milk,120,50,65,23
-Tazo® Full-Leaf Red Tea Latte (Vanilla Rooibos),Tall Nonfat Milk,120,0,65,23
-Iced Brewed Coffee (With Classic Syrup),Tall,60,120,4,15
-Shaken Iced Tazo® Tea (With Classic Syrup),Tall,60,50,0,15
+Tazo® Full-Leaf Red Tea Latte,Tall Nonfat Milk,120,0,65,23
+Iced Brewed Coffee,Tall,60,120,4,15
+Shaken Iced Tazo® Tea,Tall,60,50,0,15
 Orange mango banana smoothie,Grande Nonfat Milk,260,15,54,37
 Banana Chocolate Smoothie,Grande Nonfat Milk,280,15,150,34
 Coffee Frappuccino,Tall Nonfat Milk,160,70,160,36
-Mocha Frappuccino (Without Whipped Cream),Tall Nonfat Milk,180,70,150,40
-Caramel Frappuccino (Without Whipped Cream),Tall Nonfat Milk,180,70,160,41
-Java Chip Frappuccino (Without Whipped Cream),Tall Nonfat Milk,220,75,170,44
+Mocha Frappuccino,Tall Nonfat Milk,180,70,150,40
+Caramel Frappuccino,Tall Nonfat Milk,180,70,160,41
+Java Chip Frappuccino,Tall Nonfat Milk,220,75,170,44
