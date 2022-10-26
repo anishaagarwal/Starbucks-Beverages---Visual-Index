@@ -18,7 +18,7 @@ function setup() {
   // }
   // for (let r = 0; r < 4; r++) {
   //   for (let c = 0; c < 6; c++) {
-      //console.log(r, c);
+  //console.log(r, c);
   //   }
   // }
 }
@@ -27,20 +27,21 @@ function draw() {
   stroke(10);
   strokeWeight(1);
   noFill();
+  for (let x=0; x<)
   rect(50, 50, 200, 300);
   beverage(50, 50);
 }
 
 // creating a function for all values to be plotted
-function beverage(x, y) {
-  for (let i= 0; i < numRows; i++) {
-    let calories = table.rows[i].obj['Caffeine (mg)'];
-    let mapCal = map(calories, 0, 300, y + 300, y);
-    stroke("#C58930");
-    strokeWeight(10);
-    line(x + 30, y + 300, x + 30, mapCal);
-  }
-}
+// function beverage(x, y) {
+//   for (let row = 0; row < numRows; row++) {
+//     let caffeine = table.getNum(row,3)
+//     let mapCaf = map(caffeine, 0, 300, y + 300, y);
+//     stroke("#C58930");
+//     strokeWeight(10);
+//     line(x + 30, y + 300, x + 30, mapCaf);
+//   }
+// }
 
 //   let a = answers.Calories;
 //   let mappeda = map(a, 0, 300, 350, 50);
