@@ -41,7 +41,7 @@ function beverage(r, c) {
     let mapCaf = map(caffeine, 0, 300, y + 300, y);
     stroke("#C58930");
     strokeWeight(10);
-    line(x + 30, y + 300, x + 30, mapCaf);
+    line(x + 80, y + 300, x + 30, mapCaf);
   }
 }
 
