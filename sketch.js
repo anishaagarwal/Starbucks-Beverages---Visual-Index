@@ -16,8 +16,8 @@ function setup() {
   // for (let i=0; i<numRows; i++){
   // console.log(table.rows[i].obj['Caffeine (mg)']);
   // }
-  // for (let r = 0; r < 4; r++) {
-  //   for (let c = 0; c < 6; c++) {
+  for (let r = 0; r < 4; r++) {
+  for (let c = 0; c < 6; c++) {
   //console.log(r, c);
   //   }
   // }
