@@ -80,9 +80,10 @@ function beverage(c, r, counter) {
   fill("#0a3b4a");
   circle(x+120, y+250, mapCarbs);
   let drink=table.getString(counter,0);
-  //textSize(20);
-  //fill("#0a3b4a");
-  console.log(drink[counter]);
+  textSize(12);
+  fill("#0a3b4a");
+  textWrap(WORD);
+  text(drink,x+60,y+40,180);
 }
 
 
