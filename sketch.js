@@ -20,6 +20,7 @@ function setup() {
     for (let r = 0; r < 4; r++) {
       strokeWeight(1);
       stroke(20);
+      noFill();
       rect(c * 200, r * 300, 200, 300);
        console.log("inner loop");
       counter++;
@@ -60,22 +61,22 @@ function beverage(c, r, counter) {
   let y = r * 300;
   let caffeine = table.getNum(counter, 3);
   let mapCaf = map(caffeine, 0, 300, y + 300, y);
-  stroke("#C58930");
+  stroke("#4a2c0a");
   strokeWeight(10);
   line(x + 30, y + 300, x + 30, mapCaf);
-  let calories=table.getNum(counter,)
+  let calories=table.getNum(counter,2);
+  let mapCal=map(calories,0,300,y+300,y);
+   stroke("#C58930");
+  strokeWeight(10);
+  line(x + 50, y + 300, x + 50, mapCal);
+  let sugar=table.getNum(counter,5);
+  let mapSug=map(sugar,0,180,0,80);
+  noStroke();
+  fill("#0a3b4a");
+  circle(x+150, y+200, mapSug);
 }
-//   let a = answers.Calories;
-//   let mappeda = map(a, 0, 300, 350, 50);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(80, 350, 80, mappeda);
-//   let b = answers.Caffeine;
-//   let mappedb = map(b, 0, 300, 350, 50);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(110, 350, 110, mappedb);
-//   let c = answers.Carbs;
+
+
 //   let mappedc = map(c, 0, 180, 0, 80);
 //   fill("#C58930");
 //   circle(180, 300, mappedc);
