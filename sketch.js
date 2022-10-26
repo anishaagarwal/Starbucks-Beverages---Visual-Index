@@ -61,7 +61,7 @@ function beverage(c, r, counter) {
   let y = r * 300;
   let caffeine = table.getNum(counter, 3);
   let mapCaf = map(caffeine, 0, 300, y + 300, y);
-  stroke("#4a2c0a");
+  stroke("#49281A");
   strokeWeight(10);
   line(x + 30, y + 300, x + 30, mapCaf);
   let calories=table.getNum(counter,2);
@@ -70,82 +70,21 @@ function beverage(c, r, counter) {
   strokeWeight(10);
   line(x + 50, y + 300, x + 50, mapCal);
   let sugar=table.getNum(counter,5);
-  let mapSug=map(sugar,0,180,0,80);
+  let mapSug=map(sugar,0,50,0,80);
+  noStroke();
+  fill("#AB6832");
+  circle(x+150, y+150, mapSug);
+   let carbs=table.getNum(counter,4);
+  let mapCarbs=map(carbs,0,180,0,80);
   noStroke();
   fill("#0a3b4a");
-  circle(x+150, y+200, mapSug);
+  circle(x+120, y+250, mapCarbs);
+  let drink=table.getString(counter,0);
+  let mapDrink=map(drink,0,180,0,80);
+  textSize(20);
+  fill("#0a3b4a");
+  text(mapDrink, x+120, y+40);
 }
 
 
-//   let mappedc = map(c, 0, 180, 0, 80);
-//   fill("#C58930");
-//   circle(180, 300, mappedc);
-//   let d = answers.Sugar;
-//   let mappedd = map(d, 0, 180, 0, 80);
-//   fill("#C58930");
-//   circle(200, 200, mappedd);
-// }
 
-
-//function draw() {
-//for (let i = 0; i < numRows; i++) {
-// console.log(table.rows[i].obj['Caffeine (mg)']);
-// let x = r * 200;
-// let y = c * 300;
-//console.log(i)
-//beverage(0, 0, i);
-//}
-
-// stroke("#C58930");
-// strokeWeight(10);
-// line(x + 30, y + 300, x + 30, mapCaf);
-//}
-
-// FOR LOOP ITERATING OVER DATA GOES HERE
-
-// noFill();
-// for (let x = 50; x < width; x += 50) {
-//   for (let y = 50; y < height; y += 50) {
-// //     rect(x, y, 200, 300);
-//   }
-// }
-
-// //creating a function for all values to be plotted
-// function beverage(r, c, index) {
-//   let x = r * 200;
-//   let y = c * 300;
-//   let caffeine = table.getNum(index, 3);
-//     let mapCaf = map(caffeine, 0, 300, y + 300, y);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(x + 30, y + 300, x + 30, mapCaf);
-// for (let i = 0; i < numRows; i++) {
-//   // console.log(table.rows[i].obj['Caffeine (mg)']);
-//   let x = r * 200;
-//   let y = c * 300;
-//   let caffeine = table.getNum(i, 3);
-//   let mapCaf = map(caffeine, 0, 300, y + 300, y);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(x + 30, y + 300, x + 30, mapCaf);
-// }
-
-//   let a = answers.Calories;
-//   let mappeda = map(a, 0, 300, 350, 50);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(80, 350, 80, mappeda);
-//   let b = answers.Caffeine;
-//   let mappedb = map(b, 0, 300, 350, 50);
-//   stroke("#C58930");
-//   strokeWeight(10);
-//   line(110, 350, 110, mappedb);
-//   let c = answers.Carbs;
-//   let mappedc = map(c, 0, 180, 0, 80);
-//   fill("#C58930");
-//   circle(180, 300, mappedc);
-//   let d = answers.Sugar;
-//   let mappedd = map(d, 0, 180, 0, 80);
-//   fill("#C58930");
-//   circle(200, 200, mappedd);
-// }
