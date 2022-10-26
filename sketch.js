@@ -16,22 +16,22 @@ function setup() {
   // for (let i=0; i<numRows; i++){
   // console.log(table.rows[i].obj['Caffeine (mg)']);
   // }
-  for (let r = 0; r < 4; r++) {
-  for (let c = 0; c < 6; c++) {
-  //console.log(r, c);
-  //   }
-  // }
+  for (let r = 0; r < 6; r++) {
+  for (let c = 0; c < 4; c++) {
+    rect(r*200+50, c*300+50, 200,300)
+   }
+  }
 }
 
 function draw() {
   stroke(10);
   strokeWeight(1);
-  noFill();
-  for (let x = 50; x < width; x += 50) {
-    for (let y = 50; y < height; y += 50) {
-      rect(x, y, 200, 300);
-    }
-  }
+  // noFill();
+  // for (let x = 50; x < width; x += 50) {
+  //   for (let y = 50; y < height; y += 50) {
+  // //     rect(x, y, 200, 300);
+  //   }
+  // }
 }
 
 // creating a function for all values to be plotted
