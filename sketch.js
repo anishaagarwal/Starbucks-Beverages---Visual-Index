@@ -12,55 +12,53 @@ function setup() {
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
+  console.log(table)
 
   let counter = 0;
   for (let r = 0; r < 6; r++) {
     //counter++
-    console.log("outer loop")
+    console.log("outer loop");
     for (let c = 0; c < 4; c++) {
       rect(r * 200, c * 300, 200, 300);
-        counter++;
+      counter++;
       console.log(counter);
-      console.log(table.rows[counter].obj['Caffeine (mg)'])
+      console.log(table.getNum(counter, 3));
     }
-     
   }
-
 }
 
 function beverage(r, c, index) {
   let x = r * 200;
   let y = c * 300;
   let caffeine = table.getNum(index, 3);
-    let mapCaf = map(caffeine, 0, 300, y + 300, y);
+  let mapCaf = map(caffeine, 0, 300, y + 300, y);
   stroke("#C58930");
   strokeWeight(10);
   line(x + 30, y + 300, x + 30, mapCaf);
 }
 
 //function draw() {
-  //for (let i = 0; i < numRows; i++) {
-    // console.log(table.rows[i].obj['Caffeine (mg)']);
-    // let x = r * 200;
-    // let y = c * 300;
-    //console.log(i)
-    //beverage(0, 0, i);
+//for (let i = 0; i < numRows; i++) {
+// console.log(table.rows[i].obj['Caffeine (mg)']);
+// let x = r * 200;
+// let y = c * 300;
+//console.log(i)
+//beverage(0, 0, i);
 //}
-    
-    // stroke("#C58930");
-    // strokeWeight(10);
-    // line(x + 30, y + 300, x + 30, mapCaf);
-  //}
 
-  // FOR LOOP ITERATING OVER DATA GOES HERE
+// stroke("#C58930");
+// strokeWeight(10);
+// line(x + 30, y + 300, x + 30, mapCaf);
+//}
 
-  // noFill();
-  // for (let x = 50; x < width; x += 50) {
-  //   for (let y = 50; y < height; y += 50) {
-  // //     rect(x, y, 200, 300);
-  //   }
-  // }
+// FOR LOOP ITERATING OVER DATA GOES HERE
 
+// noFill();
+// for (let x = 50; x < width; x += 50) {
+//   for (let y = 50; y < height; y += 50) {
+// //     rect(x, y, 200, 300);
+//   }
+// }
 
 // //creating a function for all values to be plotted
 // function beverage(r, c, index) {
@@ -71,17 +69,16 @@ function beverage(r, c, index) {
 //   stroke("#C58930");
 //   strokeWeight(10);
 //   line(x + 30, y + 300, x + 30, mapCaf);
-  // for (let i = 0; i < numRows; i++) {
-  //   // console.log(table.rows[i].obj['Caffeine (mg)']);
-  //   let x = r * 200;
-  //   let y = c * 300;
-  //   let caffeine = table.getNum(i, 3);
-  //   let mapCaf = map(caffeine, 0, 300, y + 300, y);
-  //   stroke("#C58930");
-  //   strokeWeight(10);
-  //   line(x + 30, y + 300, x + 30, mapCaf);
-  // }
-
+// for (let i = 0; i < numRows; i++) {
+//   // console.log(table.rows[i].obj['Caffeine (mg)']);
+//   let x = r * 200;
+//   let y = c * 300;
+//   let caffeine = table.getNum(i, 3);
+//   let mapCaf = map(caffeine, 0, 300, y + 300, y);
+//   stroke("#C58930");
+//   strokeWeight(10);
+//   line(x + 30, y + 300, x + 30, mapCaf);
+// }
 
 //   let a = answers.Calories;
 //   let mappeda = map(a, 0, 300, 350, 50);
