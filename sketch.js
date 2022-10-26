@@ -15,22 +15,23 @@ function setup() {
   //console.log(table);
 
   let counter = 0;
-  for (let r = 0; r < 6; r++) {
-    //console.log("outer loop");
-    for (let c = 0; c < 4; c++) {
-      rect(r * 200, c * 300, 200, 300);
+  for (let c = 0; c < 6; c++) {
+    console.log("outer loop");
+    for (let r = 0; r < 4; r++) {
+      rect(c * 200, r * 300, 200, 300);
+       console.log("inner loop");
       counter++;
       console.log(counter);
-      beverage (0,0,0);
+      beverage (0,0,1);
       //let x=table.getNum(counter, 3);
       //console.log(x);
     }
   }
 }
 
-function beverage(r, c, counter) {
-  let x = r * 200;
-  let y = c * 300;
+function beverage(c, r, counter) {
+  let x = c * 200;
+  let y = r * 300;
   let caffeine = table.getNum(counter, 3);
   let mapCaf = map(caffeine, 0, 300, y + 300, y);
   stroke("#C58930");
