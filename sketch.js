@@ -39,7 +39,12 @@ function draw() {
 }
 
 // creating a function for all values to be plotted
-function allValues() {
+function beverage(x,y,) {
+  for (let row=0; row<numRows; row++){
+    for (let col=0; col<numCols; col++){
+      let calories = table.get
+    }
+  }
   let a = answers.Calories;
   let mappeda = map(a, 0, 300, 350, 50);
   stroke("#C58930");
