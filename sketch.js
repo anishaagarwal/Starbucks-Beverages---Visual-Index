@@ -3,7 +3,7 @@ let numRows;
 let numCols;
 
 function preload() {
-  table = loadTable("./Starbucks_coffee.csv", "csv", "header");
+  table = loadTable("./starbucks_coffee.csv", "csv", "header");
 }
 
 function setup() {
@@ -12,25 +12,26 @@ function setup() {
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
-  console.log(table)
+  //console.log(table);
 
   let counter = 0;
   for (let r = 0; r < 6; r++) {
-    //counter++
-    console.log("outer loop");
+    //console.log("outer loop");
     for (let c = 0; c < 4; c++) {
       rect(r * 200, c * 300, 200, 300);
       counter++;
       console.log(counter);
-      console.log(table.getNum(counter, 3));
+      beverage (0,0,0);
+      //let x=table.getNum(counter, 3);
+      //console.log(x);
     }
   }
 }
 
-function beverage(r, c, index) {
+function beverage(r, c, counter) {
   let x = r * 200;
   let y = c * 300;
-  let caffeine = table.getNum(index, 3);
+  let caffeine = table.getNum(counter, 3);
   let mapCaf = map(caffeine, 0, 300, y + 300, y);
   stroke("#C58930");
   strokeWeight(10);
