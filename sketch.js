@@ -7,8 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(1300, 1300);
-  background(255);
+  createCanvas(1200, 1200);
+  background('#f4e5d4');
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
@@ -19,7 +19,7 @@ function setup() {
     console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
-      stroke(20);
+      stroke('#c6b5a8');
       noFill();
       rect(c * 200, r * 300, 200, 300);
        console.log("inner loop");
@@ -60,15 +60,15 @@ function beverage(c, r, counter) {
   let x = c * 200;
   let y = r * 300;
   let caffeine = table.getNum(counter, 3);
-  let mapCaf = map(caffeine, 0, 300, y + 300, y);
+  let mapCaf = map(caffeine, 0, 300, y + 280, y);
   stroke("#49281A");
   strokeWeight(10);
-  line(x + 30, y + 300, x + 30, mapCaf);
+  line(x + 30, y + 280, x + 30, mapCaf);
   let calories=table.getNum(counter,2);
   let mapCal=map(calories,0,300,y+280,y);
    stroke("#C58930");
   strokeWeight(10);
-  line(x + 50, y + 300, x + 50, mapCal);
+  line(x + 50, y + 280, x + 50, mapCal);
   let sugar=table.getNum(counter,5);
   let mapSug=map(sugar,0,50,0,80);
   noStroke();
@@ -80,9 +80,9 @@ function beverage(c, r, counter) {
   fill("#0a3b4a");
   circle(x+120, y+250, mapCarbs);
   let drink=table.getString(counter,0);
-  textSize(20);
-  fill("#0a3b4a");
-  print(drink, x+120, y+40);
+  //textSize(20);
+  //fill("#0a3b4a");
+  console.log(drink[counter]);
 }
 
 
