@@ -18,7 +18,7 @@ function setup() {
   for (let c = 0; c < 6; c++) {
     console.log("outer loop");
     for (let r = 0; r < 4; r++) {
-      strokeWeight(1);
+      strokeWeight(20);
       stroke(20);
       noFill();
       rect(c * 200, r * 300, 200, 300);
@@ -65,7 +65,7 @@ function beverage(c, r, counter) {
   strokeWeight(10);
   line(x + 30, y + 300, x + 30, mapCaf);
   let calories=table.getNum(counter,2);
-  let mapCal=map(calories,0,300,y+300,y);
+  let mapCal=map(calories,0,300,y+280,y);
    stroke("#C58930");
   strokeWeight(10);
   line(x + 50, y + 300, x + 50, mapCal);
@@ -80,10 +80,9 @@ function beverage(c, r, counter) {
   fill("#0a3b4a");
   circle(x+120, y+250, mapCarbs);
   let drink=table.getString(counter,0);
-  let mapDrink=map(drink,0,180,0,80);
   textSize(20);
   fill("#0a3b4a");
-  text(mapDrink, x+120, y+40);
+  print(drink, x+120, y+40);
 }
 
 
