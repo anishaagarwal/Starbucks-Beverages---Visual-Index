@@ -7,8 +7,8 @@ function preload() {
 }
 
 function setup() {
-  createCanvas(windowWidth, 600);
-  background(255, 255, 255);
+  createCanvas(1400, 1500);
+  background(255);
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //Check for no. of rows and columns
@@ -27,9 +27,11 @@ function draw() {
   stroke(10);
   strokeWeight(1);
   noFill();
-  for (let x=0; x<)
-  rect(50, 50, 200, 300);
-  beverage(50, 50);
+  for (let x = 50; x < width; x += 50) {
+    for (let y = 50; y < height; y += 50) {
+      rect(x, y, 200, 300);
+    }
+  }
 }
 
 // creating a function for all values to be plotted
