@@ -18,11 +18,15 @@ function setup() {
   for (let c = 0; c < 6; c++) {
     console.log("outer loop");
     for (let r = 0; r < 4; r++) {
+      strokeWeight(1);
+      stroke(20);
       rect(c * 200, r * 300, 200, 300);
        console.log("inner loop");
       counter++;
       console.log(counter);
-      beverage (0,0,1);
+      beverage (0,0,0);
+      beverage (1,0,1);
+      beverage (2,0,2);
       //let x=table.getNum(counter, 3);
       //console.log(x);
     }
