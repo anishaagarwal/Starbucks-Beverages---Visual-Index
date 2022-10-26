@@ -1,12 +1,8 @@
 let table;
 let numRows;
 let numCols;
-let answers = {
-  Calories: "100",
-  Caffeine: "75",
-  Carbs: "180",
-  Sugar: "50",
-};
+let x=50;
+let y=50;
 
 function preload() {
   table = loadTable("./Starbucks_coffee.csv", "csv", "header");
@@ -39,31 +35,34 @@ function draw() {
 }
 
 // creating a function for all values to be plotted
-function beverage(x,y,) {
+function beverage(x,y) {
   for (let row=0; row<numRows; row++){
-    for (let col=0; col<numCols; col++){
-      let calories = table.get
-    }
+      let calories = table.getNum(row,2);
+      let mapCal = map(calories, 0,300,y+300,y)
+      line(x+30, y+300, x+30, mapCal);
+    
   }
-  let a = answers.Calories;
-  let mappeda = map(a, 0, 300, 350, 50);
-  stroke("#C58930");
-  strokeWeight(10);
-  line(80, 350, 80, mappeda);
-  let b = answers.Caffeine;
-  let mappedb = map(b, 0, 300, 350, 50);
-  stroke("#C58930");
-  strokeWeight(10);
-  line(110, 350, 110, mappedb);
-  let c = answers.Carbs;
-  let mappedc = map(c, 0, 180, 0, 80);
-  fill("#C58930");
-  circle(180, 300, mappedc);
-  let d = answers.Sugar;
-  let mappedd = map(d, 0, 180, 0, 80);
-  fill("#C58930");
-  circle(200, 200, mappedd);
-}
+  
+  
+//   let a = answers.Calories;
+//   let mappeda = map(a, 0, 300, 350, 50);
+//   stroke("#C58930");
+//   strokeWeight(10);
+//   line(80, 350, 80, mappeda);
+//   let b = answers.Caffeine;
+//   let mappedb = map(b, 0, 300, 350, 50);
+//   stroke("#C58930");
+//   strokeWeight(10);
+//   line(110, 350, 110, mappedb);
+//   let c = answers.Carbs;
+//   let mappedc = map(c, 0, 180, 0, 80);
+//   fill("#C58930");
+//   circle(180, 300, mappedc);
+//   let d = answers.Sugar;
+//   let mappedd = map(d, 0, 180, 0, 80);
+//   fill("#C58930");
+//   circle(200, 200, mappedd);
+// }
 
 //   for (let row = 0; row < table.getRowCount(); row++) {
 //     // getNum() method takes two arguments: first is the row index, and second is the column index
