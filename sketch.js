@@ -27,6 +27,28 @@ function setup() {
       beverage (0,0,0);
       beverage (1,0,1);
       beverage (2,0,2);
+      beverage (3,0,3);
+      beverage (4,0,4);
+      beverage (5,0,5);
+      beverage (0,1,6);
+      beverage (1,1,7);
+      beverage (2,1,8);
+      beverage (3,1,9);
+      beverage (4,1,10);
+      beverage (5,1,11);
+      beverage (0,2,12);
+      beverage (1,2,13);
+      beverage (2,2,14);
+      beverage (3,2,15);
+      beverage (4,2,16);
+      beverage (5,2,17);
+      beverage (0,3,18);
+      beverage (1,3,19);
+      beverage (2,3,20);
+      beverage (3,3,21);
+      beverage (4,3,22);
+      beverage (5,3,23);
+      
       //let x=table.getNum(counter, 3);
       //console.log(x);
     }
@@ -41,7 +63,28 @@ function beverage(c, r, counter) {
   stroke("#C58930");
   strokeWeight(10);
   line(x + 30, y + 300, x + 30, mapCaf);
+  let calories=table.getNum(counter,)
 }
+//   let a = answers.Calories;
+//   let mappeda = map(a, 0, 300, 350, 50);
+//   stroke("#C58930");
+//   strokeWeight(10);
+//   line(80, 350, 80, mappeda);
+//   let b = answers.Caffeine;
+//   let mappedb = map(b, 0, 300, 350, 50);
+//   stroke("#C58930");
+//   strokeWeight(10);
+//   line(110, 350, 110, mappedb);
+//   let c = answers.Carbs;
+//   let mappedc = map(c, 0, 180, 0, 80);
+//   fill("#C58930");
+//   circle(180, 300, mappedc);
+//   let d = answers.Sugar;
+//   let mappedd = map(d, 0, 180, 0, 80);
+//   fill("#C58930");
+//   circle(200, 200, mappedd);
+// }
+
 
 //function draw() {
 //for (let i = 0; i < numRows; i++) {
