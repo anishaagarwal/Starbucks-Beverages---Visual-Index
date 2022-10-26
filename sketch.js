@@ -16,17 +16,18 @@ function setup() {
   // console.log(table.rows[i].obj['Caffeine (mg)']);
   // }
   for (let r = 0; r < 6; r++) {
-  for (let c = 0; c < 4; c++) {
-   
-    rect(r*200+50, c*300+50, 200,300)
-   }
+    for (let c = 0; c < 4; c++) {
+      let x = r * 200 + 50,;
+      let y=
+      rect(r * 200 + 50, c * 300 + 50, 200, 300);
+    }
   }
 }
 
 function draw() {
   stroke(10);
   strokeWeight(1);
-  beverage();
+  beverage(1,1);
   // noFill();
   // for (let x = 50; x < width; x += 50) {
   //   for (let y = 50; y < height; y += 50) {
@@ -36,9 +37,9 @@ function draw() {
 }
 
 //creating a function for all values to be plotted
-function beverage() {
+function beverage(r,c) {
   for (let row = 0; row < numRows; row++) {
-    let caffeine = table.getNum(row,3)
+    let caffeine = table.getNum(row, 3);
     let mapCaf = map(caffeine, 0, 300, r + 300, c);
     stroke("#C58930");
     strokeWeight(10);
