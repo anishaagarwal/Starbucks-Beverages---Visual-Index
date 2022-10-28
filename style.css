@@ -20,6 +20,8 @@ html {
   margin: 0;
 }
 
+
+
 /* set header image */
 .header-image {
   background-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/StarBucks-Visit-Lakeville-Restaurants.jpg?v=1666931832074");
@@ -30,6 +32,12 @@ html {
   height: 80%;
 }
 
+body {
+  line-height: 1.5;
+  background-color: #ffffff;
+  color: #d2d2d2;
+}
+
 /* set text in the header */
 .header-text {
   position: absolute;
@@ -37,12 +45,6 @@ html {
   left: 10%;
   color: #ffffff;
   width: 40%;
-}
-
-body {
-  line-height: 1.5;
-  background-color: #ffffff;
-  color: #d2d2d2;
 }
 
 body h1 {
@@ -62,18 +64,30 @@ body h1 span {
   color: #368467;
 }
 
-body p {
-  color: #a3a19f;
+/* set visual index text */
+
+.visual-index {
+  margin: 5%;
+  color: #3b3b3a;
   font-size: 1em;
 }
+
+
 body p span {
   color: #368467;
+  font-weight: 500;
 }
 
-.visual-index{
-  margin:5%;
-}
 canvas {
   border: 3px solid #ffffff;
   margin: 5%;
+}
+
+footer {
+  background-color:#49281A;
+  width: 100vw;
+  hei
+  font-size: .8em;
+  color: #368467;
+  text-align: center;
 }
