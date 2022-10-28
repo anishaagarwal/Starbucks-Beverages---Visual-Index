@@ -7,53 +7,52 @@ function preload() {
 }
 
 function setup() {
- 
   createCanvas(1200, 1200);
 
-  background('#efede7');
+  background("#efede7");
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
   //console.log(table);
-  
-//CREATING A COUNTER TO
+
+  //CREATING A COUNTER TO
   let counter = 0;
   //CREATING A GRID OF 6 COLUMNS AND 4 ROWS
   for (let c = 0; c < 6; c++) {
     //console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
-      stroke('#ffffff');
+      stroke("#ffffff");
       noFill();
       rect(c * 200, r * 300, 200, 300);
-       //console.log("inner loop");
+      //console.log("inner loop");
       counter++;
       //console.log(counter);
-      beverage (0,0,0);
-      beverage (1,0,1);
-      beverage (2,0,2);
-      beverage (3,0,3);
-      beverage (4,0,4);
-      beverage (5,0,5);
-      beverage (0,1,6);
-      beverage (1,1,7);
-      beverage (2,1,8);
-      beverage (3,1,9);
-      beverage (4,1,10);
-      beverage (5,1,11);
-      beverage (0,2,12);
-      beverage (1,2,13);
-      beverage (2,2,14);
-      beverage (3,2,15);
-      beverage (4,2,16);
-      beverage (5,2,17);
-      beverage (0,3,18);
-      beverage (1,3,19);
-      beverage (2,3,20);
-      beverage (3,3,21);
-      beverage (4,3,22);
-      beverage (5,3,23);
-      
+      beverage(0, 0, 0);
+      beverage(1, 0, 1);
+      beverage(2, 0, 2);
+      beverage(3, 0, 3);
+      beverage(4, 0, 4);
+      beverage(5, 0, 5);
+      beverage(0, 1, 6);
+      beverage(1, 1, 7);
+      beverage(2, 1, 8);
+      beverage(3, 1, 9);
+      beverage(4, 1, 10);
+      beverage(5, 1, 11);
+      beverage(0, 2, 12);
+      beverage(1, 2, 13);
+      beverage(2, 2, 14);
+      beverage(3, 2, 15);
+      beverage(4, 2, 16);
+      beverage(5, 2, 17);
+      beverage(0, 3, 18);
+      beverage(1, 3, 19);
+      beverage(2, 3, 20);
+      beverage(3, 3, 21);
+      beverage(4, 3, 22);
+      beverage(5, 3, 23);
+
       //let x=table.getNum(counter, 3);
       //console.log(x);
     }
@@ -68,28 +67,25 @@ function beverage(c, r, counter) {
   stroke("#49281A");
   strokeWeight(10);
   line(x + 30, y + 280, x + 30, mapCaf);
-  let calories=table.getNum(counter,2);
-  let mapCal=map(calories,0,300,y+280,y);
-   stroke("#C58930");
+  let calories = table.getNum(counter, 2);
+  let mapCal = map(calories, 0, 300, y + 280, y);
+  stroke("#C58930");
   strokeWeight(10);
   line(x + 50, y + 280, x + 50, mapCal);
-  let sugar=table.getNum(counter,5);
-  let mapSug=map(sugar,0,50,0,80);
+  let sugar = table.getNum(counter, 5);
+  let mapSug = map(sugar, 0, 50, 0, 80);
   noStroke();
   fill("#d5af95");
-  circle(x+150, y+150, mapSug);
-   let carbs=table.getNum(counter,4);
-  let mapCarbs=map(carbs,0,190,0,80);
+  circle(x + 150, y + 150, mapSug);
+  let carbs = table.getNum(counter, 4);
+  let mapCarbs = map(carbs, 0, 190, 0, 80);
   noStroke();
   fill("#0a3b4a");
-  circle(x+120, y+250, mapCarbs);
-  let drink=table.getString(counter,0);
+  circle(x + 120, y + 250, mapCarbs);
+  let drink = table.getString(counter, 0);
   textSize(12);
   textAlign(RIGHT);
-  fill("#0a3b4a");
+  fill("#368467");
   textWrap(WORD);
-  text(drink,x+70,y+40,100);
+  text(drink, x + 70, y + 40, 100);
 }
-
-
-

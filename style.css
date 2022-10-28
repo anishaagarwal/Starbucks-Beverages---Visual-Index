@@ -20,8 +20,6 @@ html {
   margin: 0;
 }
 
-
-
 /* set header image */
 .header-image {
   background-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/StarBucks-Visit-Lakeville-Restaurants.jpg?v=1666931832074");
@@ -52,12 +50,12 @@ body h1 {
 }
 
 a {
-  color: #ffffff;
+  color: #368467;
   text-decoration: none;
 }
 
 a:hover {
-  color: #368467;
+  color: #d5af95;
 }
 
 body h1 span {
@@ -72,7 +70,6 @@ body h1 span {
   font-size: 1em;
 }
 
-
 body p span {
   color: #368467;
   font-weight: 500;
@@ -83,40 +80,38 @@ canvas {
   margin: 5%;
 }
 
-ul{
-  margin:0;
-
+ul {
+  margin: 0;
 }
 
+ul li.caf {
+  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/caf.svg?v=1666938140946");
+}
 
 ul li.cal {
-    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/cal.svg?v=1666937934954');
-  
+  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/cal.svg?v=1666937934954");
 }
 
 ul li.carbs {
-    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/carbs.svg?v=1666937721247');
-  
+  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/carbs.svg?v=1666937721247");
 }
 
 ul li.sug {
-    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sugar.svg?v=1666937604784');
-  
+  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sugar.svg?v=1666938140946");
 }
 
-footer img{
+footer img {
   width: 100%;
   height: 100%;
   margin-bottom: 20px;
-  
 }
 
 footer {
-  background-color:#ffffff;
+  background-color: #ffffff;
   width: 100vw;
   height: 80px;
 
-  font-size: .8em;
+  font-size: 0.8em;
   color: #378367;
   text-align: center;
 }
