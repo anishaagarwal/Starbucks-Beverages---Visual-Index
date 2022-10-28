@@ -21,7 +21,7 @@ function setup() {
     //console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
-      stroke('#c6b5a8');
+      stroke('#efede7');
       noFill();
       rect(c * 200, r * 300, 200, 300);
        //console.log("inner loop");
