@@ -11,7 +11,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
+body img{
+  width:100vw;
+  height: 300px;
+  
+}
 /* adjust typography defaults */
 body {
   margin: 1rem;
