@@ -88,13 +88,19 @@ ul{
 
 }
 
+
+ul li.cal {
+    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/cal.svg?v=1666937934954');
+  
+}
+
 ul li.carbs {
-    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/carbs.svg?v=1666937291288');
+    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/carbs.svg?v=1666937721247');
   
 }
 
 ul li.sug {
-    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sug-01.svg?v=1666937291307');
+    list-style-image: url('https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sugar.svg?v=1666937604784');
   
 }
 
