@@ -15,10 +15,14 @@ html {
 /* adjust typography defaults */
 body {
   margin: 1rem;
-  font-family:'Inter';
   line-height: 1.5;
-  background-color: #c6b5a8;
-  color: #333333;
+  background-color: #f0ede8;
+  color: #d2d2d;
+}
+
+body h1 span {
+  color: #368467; 
+  
 }
 
 canvas {
