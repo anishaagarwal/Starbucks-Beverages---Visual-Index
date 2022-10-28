@@ -79,7 +79,7 @@ function beverage(c, r, counter) {
   fill("#AB6832");
   circle(x+150, y+150, mapSug);
    let carbs=table.getNum(counter,4);
-  let mapCarbs=map(carbs,0,180,0,80);
+  let mapCarbs=map(carbs,0,190,0,80);
   noStroke();
   fill("#0a3b4a");
   circle(x+120, y+250, mapCarbs);
