@@ -83,11 +83,19 @@ canvas {
   margin: 5%;
 }
 
+footer img{
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+  
+}
+
 footer {
-  background-color:#49281A;
+  background-color:#ffffff;
   width: 100vw;
-  hei
+  height: 80px;
+
   font-size: .8em;
-  color: #368467;
+  color: #378367;
   text-align: center;
 }
