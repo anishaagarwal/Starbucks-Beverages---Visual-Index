@@ -24,7 +24,10 @@ body h1 span {
   color: #368467; 
   
 }
-
+body p span {
+  color: #368467; 
+  
+}
 canvas {
   border: 3px solid #c6b5a8;
 }
