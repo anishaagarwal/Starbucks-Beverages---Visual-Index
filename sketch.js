@@ -7,8 +7,10 @@ function preload() {
 }
 
 function setup() {
+ 
   createCanvas(1200, 1200);
-  background('#f4e5d4');
+
+  background('#efede7');
   numRows = table.getRowCount();
   numCols = table.getColumnCount();
   //console.log(numRows, numCols);
@@ -21,7 +23,7 @@ function setup() {
     //console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
-      stroke('#efede7');
+      stroke('#ffffff');
       noFill();
       rect(c * 200, r * 300, 200, 300);
        //console.log("inner loop");

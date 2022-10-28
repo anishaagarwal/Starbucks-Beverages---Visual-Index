@@ -41,7 +41,7 @@ html {
 
 body {
   line-height: 1.5;
-background-color: #f0ede8;
+  background-color: #ffffff;
   color: #d2d2d2;
 }
 
@@ -69,8 +69,11 @@ body p {
 body p span {
   color: #368467;
 }
+
+.visual-index{
+  margin:5%;
+}
 canvas {
-  border: 3px solid #c6b5a8;
-  margin-right: auto;
-  margin-left: auto;
+  border: 3px solid #ffffff;
+  margin: 5%;
 }
