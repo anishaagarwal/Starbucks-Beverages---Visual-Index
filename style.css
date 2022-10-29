@@ -58,6 +58,8 @@ a:hover {
   color: #d5af95;
 }
 
+/* highlighting text */
+
 body h1 span {
   color: #368467;
 }
@@ -70,6 +72,8 @@ body h1 span {
   font-size: 1em;
 }
 
+/* highlighting text */
+
 body p span {
   color: #368467;
   font-weight: 500;
@@ -78,8 +82,8 @@ body p span {
 canvas {
   border: 3px solid #ffffff;
   margin-left: 5%;
-    margin-right: 5%;
-  margin-bottom:5%;
+  margin-right: 5%;
+  margin-bottom: 5%;
 }
 
 ul {
@@ -114,7 +118,6 @@ footer {
   background-color: #ffffff;
   width: 100vw;
   height: 80px;
-
   font-size: 0.8em;
   color: #378367;
   text-align: center;

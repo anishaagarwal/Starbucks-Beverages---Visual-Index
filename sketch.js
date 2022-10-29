@@ -1,7 +1,7 @@
 let table;
 let numRows;
 let numCols;
-
+//Loading the dataset
 function preload() {
   table = loadTable("./starbucks_coffee.csv", "csv", "header");
 }
@@ -15,19 +15,17 @@ function setup() {
   //console.log(numRows, numCols);
   //console.log(table);
 
-  //CREATING A COUNTER TO
+  //Creating a counter
   let counter = 0;
-  //CREATING A GRID OF 6 COLUMNS AND 4 ROWS
+  //Creating a grid of 6 columns and 4 rows
   for (let c = 0; c < 6; c++) {
-    //console.log("outer loop");
     for (let r = 0; r < 4; r++) {
       strokeWeight(20);
       stroke("#ffffff");
       noFill();
       rect(c * 200, r * 300, 200, 300);
-      //console.log("inner loop");
+      // Incrementing the counter by 1 such that it loops throigh every row in the dataset
       counter++;
-      //console.log(counter);
       beverage(0, 0, 0);
       beverage(1, 0, 1);
       beverage(2, 0, 2);
@@ -52,12 +50,11 @@ function setup() {
       beverage(3, 3, 21);
       beverage(4, 3, 22);
       beverage(5, 3, 23);
-
-      //let x=table.getNum(counter, 3);
-      //console.log(x);
     }
   }
 }
+
+//Creating a function with all the element styles to be plotted on the visaul index. The function will take 3 arguments: row no., column no., (to specify position on grid) and counter (to specify which row in the dataset is to be plotted)
 
 function beverage(c, r, counter) {
   let x = c * 200;

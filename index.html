@@ -16,6 +16,7 @@
     <title>Anisha's Visual Index</title>
   </head>
   <body>
+    <!-- Creating a nested div for header of the page-->
     <div class="header-image">
       <div class="header-text">
         <h1>What's in your <br /><span>STARBUCKS</span> beverage?</h1>
@@ -43,17 +44,25 @@
         the data for <span><i>tall</i></span> size drinks and
         <span><i>non-fat milk</i></span> type for this visualization.
       </p>
-      <p>4 data points have been mapped for every beverage, size corresponding to each of which represents the value of that data point. Caffeine and Calorie content have been plotted using a line, the lenghth of which is directly proportional to the quantitative value. Similarly, circles have been used to represent total carbs and sugars in each beverage. The radius of each circle represents the amount of each value.</p>
+      <p>
+        4 data points have been mapped for every beverage, size corresponding to
+        each of which represents the value of that data point. Caffeine and
+        Calorie content have been plotted using a line, the lenghth of which is
+        directly proportional to the quantitative value. Similarly, circles have
+        been used to represent total carbs and sugars in each beverage. The
+        radius of each circle represents the amount of each value.
+      </p>
+      <!--Legend -->
       <div class="legend">
         <li class="caf">Caffeine Content (0-300mg)</li>
         <li class="cal">Number of Calories (0-300)</li>
         <li class="carbs">Total Carbs (0-190g)</li>
         <li class="sug">Sugar Content (0-50g)</li>
-      </ul>
-    </div>
+      </div>
 
-    <!-- by default, p5 will automatically find the <main> tag and insert graphic here-->
-    <main></main>
+      <!-- by default, p5 will automatically find the <main> tag and insert graphic here-->
+      <main></main>
+    </div>
     <footer>
       <img
         src="https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/hot-coffee-cup-with-hearts-svgrepo-com.svg?v=1666934962822"
