@@ -86,13 +86,18 @@ canvas {
   margin-bottom: 5%;
 }
 
-ul {
-  margin: 0;
-}
 
 /* Legend */
 
-ul li.caf {
+.line img{
+  width: 10px;
+  height:60px;
+  float: left;
+  vertical-align: baseline;
+}
+
+
+/*ul li.caf {
   list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/caf.svg?v=1666938140946");
 }
 
@@ -106,7 +111,7 @@ ul li.carbs {
 
 ul li.sug {
   list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sugar.svg?v=1666938140946");
-}
+}*/
 
 footer img {
   width: 100%;
