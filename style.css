@@ -81,25 +81,29 @@ body p span {
 
 canvas {
   border: 3px solid #ffffff;
-  margin-left: 5%;
+  margin-left: 3%;
   margin-right: 5%;
   margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 /* Legend */
+
+.line p {
+  width: 40vw;
+}
 
 .line p img {
   width: 40px;
   height: 30px;
 }
 
-
-.line{
-
-   text-align: center;
+.circle p {
+  width: 40vw;
 }
 
 .circle p img {
+  margin-right: 4%;
   width: 30px;
   height: 30px;
 }
@@ -108,25 +112,7 @@ canvas {
   float: left;
 }
 
-.circle {
-  margin-left: 20%;
-}
-
-/*ul li.caf {
-  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/caf.svg?v=1666938140946");
-}
-
-ul li.cal {
-  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/cal.svg?v=1666937934954");
-}
-
-ul li.carbs {
-  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/carbs.svg?v=1666937721247");
-}
-
-ul li.sug {
-  list-style-image: url("https://cdn.glitch.global/66868462-b0e9-4251-8f66-b76e5f6f3cdc/sugar.svg?v=1666938140946");
-}*/
+/* styling footer */
 
 footer img {
   width: 100%;
